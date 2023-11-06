@@ -1,7 +1,9 @@
 name: Tag approval
 
 on:
-  push
+  push:
+    tags:
+      - '*'
 
 jobs:
   deployment:
