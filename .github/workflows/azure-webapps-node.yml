@@ -1,0 +1,12 @@
+name: Tag approval
+
+on:
+  push
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: tagenv
+    steps:
+      - name: deploy
+        run: echo "hello"
